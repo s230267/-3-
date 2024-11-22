@@ -3,11 +3,12 @@
 import streamlit as st
 
 # 1. 기계학습 모델 파일 로드
-
+import joblib
+model=joblib.load('')
 
 # 2. 모델 설명
- st.title('_______')
-col1, col2,col3 = st.columns( ____ )      # 몇 개의 컬럼으로 나눌까?
+ st.title('폭염 예측 에이전트')
+col1, col2,col3 = st.columns( 3 )      # 몇 개의 컬럼으로 나눌까?
 with col1:
       st.subheader('모델 설명 ')
       st.write(' - 기계학습 알고리즘 : 로지스틱 회귀 ')
@@ -17,7 +18,12 @@ with col1:
       st.write(' - 모델 정확도 : ')
 
 # 3. 데이터시각화
-
+with col2:
+      st.subheader('')
+      st.image('')
+ with col3:
+      st.subheader('')
+      st.image('')
 
 # 4. 모델 활용
 st.subheader('모델 활용')
@@ -31,4 +37,7 @@ d=st.selectbox('자외선 지수 선택(메우높음:0,높음:1,낮음:2,매우 
 if st.button('폭염 예측')
   input_data=[[a,b,c,d]]
   p=model.predict(input_data)
-  st.write('인공지능의 폭염 여부 예측은',p)
+ if p[0]==0:
+  st.success('예측 결과는 폭염이 아닙니다.')
+ else:
+  st.success('예측 결과는 폭염입니다.')
