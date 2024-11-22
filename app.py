@@ -8,7 +8,7 @@ model=joblib.load('')
 
 # 2. 모델 설명
  st.title('폭염 예측 에이전트')
-col1, col2,col3 = st.columns( 3 )      # 몇 개의 컬럼으로 나눌까?
+col1, col2,col3,col4,col4,col5,col6 = st.columns( 6)      # 몇 개의 컬럼으로 나눌까?
 with col1:
       st.subheader('모델 설명 ')
       st.write(' - 기계학습 알고리즘 : 로지스틱 회귀 ')
@@ -21,9 +21,19 @@ with col1:
 with col2:
       st.subheader('')
       st.image('')
- with col3:
+with col3:
       st.subheader('')
       st.image('')
+with col4:
+      st.subheader('')
+      st.image('')
+with col5:
+      st.subheader('')
+      st.image('')
+ with col6:
+      st.subheader('')
+      st.image('')
+
 
 # 4. 모델 활용
 st.subheader('모델 활용')
