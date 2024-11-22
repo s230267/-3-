@@ -39,9 +39,9 @@ with col5:
 st.subheader('모델 활용')
 st.write('--다음 수치들을 입력하세요.인공지능이 폭염 여부를 판단해드립니다.--')
 
-a=st.number_input('최고 기온 입력')
-b=st.number_input('최저 기온 입력')
-c=st.number_input('평균 상대 습도 입력')
+a=st.number_input('최고 기온 입력',value=0)
+b=st.number_input('최저 기온 입력',value=0)
+c=st.number_input('평균 상대 습도 입력',value=0)
 d=st.selectbox('자외선 지수 선택(메우높음:0,높음:1,낮음:2,매우 낮음:3',[0,1,2,3])
 
 if st.button('폭염 예측')
