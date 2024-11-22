@@ -46,7 +46,7 @@ d=st.selectbox('자외선 지수 선택(메우높음:0,높음:1,낮음:2,매우 
 if st.button('폭염 예측'):
   input_data=[[a,b,c,d]]
   p=model.predict(input_data)
- if p[0]==0:
-  st.success('예측 결과는 폭염이 아닙니다.')
- else:
-  st.success('예측 결과는 폭염입니다.')
+  if p[0]==0:
+       st.success('예측 결과는 폭염이 아닙니다.')
+  else:
+       st.success('예측 결과는 폭염입니다.')
