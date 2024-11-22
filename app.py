@@ -15,7 +15,7 @@ with col1:
       st.write(' - 학습 데이터 출처 : https://data.kma.go.kr/data/weatherIssue/slthtList.do?pgmNo=690)
       st.write(' - 훈련    데이터 : 700건')
       st.write(' - 테스트 데이터 : 300건')
-      st.write(' - 모델 정확도 : ')
+      st.write(' - 모델 정확도 :0.97 ')
 
 # 3. 데이터시각화
 with col2:
