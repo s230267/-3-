@@ -43,7 +43,7 @@ b=st.number_input('최저 기온 입력',value=0)
 c=st.number_input('평균 상대 습도 입력',value=0)
 d=st.selectbox('자외선 지수 선택(메우높음:0,높음:1,낮음:2,매우 낮음:3',[0,1,2,3])
 
-if st.button('폭염 예측')
+if st.button('폭염 예측'):
   input_data=[[a,b,c,d]]
   p=model.predict(input_data)
  if p[0]==0:
