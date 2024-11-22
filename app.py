@@ -4,7 +4,7 @@ import streamlit as st
 
 # 1. 기계학습 모델 파일 로드
 import joblib
-model=joblib.load('')
+model=joblib.load('logistic_regression_model.pkl')
 
 # 2. 모델 설명
  st.title('폭염 예측 에이전트')
@@ -19,20 +19,20 @@ with col1:
 
 # 3. 데이터시각화
 with col2:
-      st.subheader('')
-      st.image('')
+      st.subheader('데이터시각화1')
+      st.image('시각화.png')
 with col3:
-      st.subheader('')
-      st.image('')
+      st.subheader('데이터시각화'2')
+      st.image('시각화.png')
 with col4:
-      st.subheader('')
-      st.image('')
+      st.subheader('데이터시각화'3')
+      st.image('시각화.png')
 with col5:
-      st.subheader('')
-      st.image('')
+      st.subheader('데이터시각화'4')
+      st.image('시각화.png')
  with col6:
-      st.subheader('')
-      st.image('')
+      st.subheader('데이터시각화'5')
+      st.image('시각화.png')
 
 
 # 4. 모델 활용
