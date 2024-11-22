@@ -1,5 +1,4 @@
 # 분류 모델 웹앱 만들기
-
 import streamlit as st
 
 # 1. 기계학습 모델 파일 로드
@@ -7,7 +6,7 @@ import joblib
 model=joblib.load('logistic_regression_model.pkl')
 
 # 2. 모델 설명
- st.title('폭염 예측 에이전트')
+st.title('폭염 예측 에이전트')
 col1, col2,col3,col4,col4,col5,col6 = st.columns( 6)      # 몇 개의 컬럼으로 나눌까?
 with col1:
       st.subheader('모델 설명 ')
