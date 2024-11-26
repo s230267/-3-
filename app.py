@@ -7,7 +7,7 @@ model=joblib.load('logistic_regression_model.pkl')
 
 # 2. 모델 설명
 st.title('폭염 예측 에이전트')
-col1, col2,col3,col4,col5,col6 = st.columns(6)      # 몇 개의 컬럼으로 나눌까?
+col1, col2 = st.columns(2)      # 몇 개의 컬럼으로 나눌까?
 with col1:
       st.subheader('모델 설명 ')
       st.write(' - 기계학습 알고리즘 : 로지스틱 회귀 ')
@@ -20,16 +20,12 @@ with col1:
 with col2:
       st.subheader('데이터시각화1')
       st.image('시각화1.png')
-with col3:
       st.subheader('데이터시각화2')
       st.image('시각화2.png')
-with col4:
       st.subheader('데이터시각화3')
       st.image('시각화3.png')
-with col5:
       st.subheader('데이터시각화4')
       st.image('시각화4.png')
-with col6:
       st.subheader('데이터시각화5')
       st.image('시각화5.png')
 
