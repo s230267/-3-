@@ -28,6 +28,7 @@ st.image('시각화5.png')
 # 4. 모델 활용
 st.subheader('모델 활용')
 st.write('--다음 수치들을 입력하세요.인공지능이 폭염 여부를 판단해드립니다.--')
+st.write('--입력된 수치들은 결괏값 예측 이외의 목적으로 사용되어지지 않습니다.--')
 
 a=st.number_input('최고 기온 입력',value=0)
 b=st.number_input('최저 기온 입력',value=0)
